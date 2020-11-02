@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Paper from '@material-ui/core/Paper';
 import Header from '../src/components/Header';
 import FeaturesSection1 from '../src/components/FeatureSection1';
