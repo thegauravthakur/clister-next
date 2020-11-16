@@ -30,9 +30,9 @@ const HomeAppBar = () => {
           variant="h6"
           className={classes.title}
         >
-          CLister
+          C-LISTER
         </Typography>
-        <Button onClick={() => {
+        <Button style={{marginRight:10}} onClick={() => {
           window.location.href = 'https://app.clister.in/login';
         }} color="inherit">
           Login

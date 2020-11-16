@@ -1,11 +1,11 @@
 import React from 'react';
 import HomeAppBar from './HomeAppBar';
-import {Typography} from '@material-ui/core';
-import {useMediaQuery} from '@material-ui/core';
-import {makeStyles} from '@material-ui/core/styles';
-import {use100vh} from 'react-div-100vh';
+import { Typography } from '@material-ui/core';
+import { useMediaQuery } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { use100vh } from 'react-div-100vh';
 import Typewriter from 'typewriter-effect';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Header = ({isMobile}) => {
   const height = use100vh();
@@ -14,20 +14,20 @@ const Header = ({isMobile}) => {
       margin: '20px 0 20px 0',
       fontFamily: 'Courier Prime, monospace',
       [theme.breakpoints.down('md')]: {
-        fontSize: '1.8em'
-      }
+        fontSize: '1.8em',
+      },
     },
     image: {
       [theme.breakpoints.down('md')]: {
-        maxWidth: '80%'
+        maxWidth: '80%',
       },
       [theme.breakpoints.up('sm')]: {
-        maxWidth: '90%'
+        maxWidth: '90%',
       },
       [theme.breakpoints.up('lg')]: {
-        maxWidth: '900px'
-      }
-    }
+        maxWidth: '900px',
+      },
+    },
   }));
   const classes = useStyle();
   return (
@@ -39,23 +39,23 @@ const Header = ({isMobile}) => {
         variants={{
           hidden: {
             scale: 0.8,
-            opacity: 0
+            opacity: 0,
           },
           visible: {
             scale: 1,
             opacity: 1,
             transition: {
-              duration: 0.6
-            }
-          }
+              duration: 0.6,
+            },
+          },
         }}
         style={{
-          minHeight: height - 64,
+          minHeight: height ? height - 64 : '100vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
           backgroundColor: 'black',
-          alignItems: 'center'
+          alignItems: 'center',
         }}
       >
         <Typography className={classes.title} variant="h3" align="center">
@@ -63,7 +63,7 @@ const Header = ({isMobile}) => {
             options={{
               strings: ['Stay Organized', 'Be Productive'],
               autoStart: true,
-              loop: true
+              loop: true,
             }}
           />
           <br/>
