@@ -17,7 +17,7 @@ const Footer = () => {
       >
         © 2020 Copyright: <a target="_blank"
                              rel="noopener noreferrer"
-                            style={{color: '#1DA1F2', textDecoration: 'none'}} href={'https://gauravthakur.me'}>Gaurav Thakur</a> | Made with
+                            style={{color: '#1DA1F2', textDecoration: 'none'}} href={'https://gauravthakur.in'}>Gaurav Thakur</a> | Made with
         <span style={{color: 'red', fontSize: '22px'}}>❤</span> in India
       </Typography>
     </Paper>
